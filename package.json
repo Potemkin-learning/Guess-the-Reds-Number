@@ -1,0 +1,13 @@
+{
+  "name": "liverpool-fc-quiz",
+  "version": "1.0.0",
+  "description": "Liverpool FC players' shirt number guessing game",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 3000"
+  },
+  "keywords": ["liverpool", "fc", "quiz", "football", "game"],
+  "author": "",
+  "license": "MIT"
+}

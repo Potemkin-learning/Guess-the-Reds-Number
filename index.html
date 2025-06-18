@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リヴァプールFC 背番号クイズ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>リヴァプールFC 背番号クイズ</h1>
+            <div class="score-display">
+                <span id="current-question">問題 1</span> / 
+                <span id="total-questions">5</span>
+                <span class="score">正答数: <span id="score">0</span></span>
+            </div>
+        </header>
+
+        <main id="game-screen" class="game-screen">
+            <div class="player-info">
+                <div class="player-image-container">
+                    <img id="player-image" src="" alt="選手の画像" class="player-image">
+                </div>
+                <h2 id="player-name" class="player-name">選手名</h2>
+            </div>
+
+            <div class="choices">
+                <button class="choice-btn" data-number="">11</button>
+                <button class="choice-btn" data-number="">4</button>
+                <button class="choice-btn" data-number="">9</button>
+                <button class="choice-btn" data-number="">7</button>
+            </div>
+
+            <div id="feedback" class="feedback hidden">
+                <p id="feedback-text"></p>
+                <button id="next-btn" class="next-btn">次の問題</button>
+            </div>
+        </main>
+
+        <div id="result-screen" class="result-screen hidden">
+            <h2>ゲーム終了！</h2>
+            <div class="results">
+                <p class="final-score">正答数：<span id="final-score">0</span> / <span id="final-total">5</span> 問</p>
+                <p class="accuracy">正答率：<span id="accuracy">0</span>%</p>
+            </div>
+            <button id="restart-btn" class="restart-btn">もう一度プレイする</button>
+        </div>
+    </div>
+
+    <script src="players.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
